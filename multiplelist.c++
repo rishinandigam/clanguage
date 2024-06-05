@@ -49,7 +49,7 @@ Node* insertatposition( Node *head)
         NodeCount = NodeCount->next;
     }
     Node* newnode = (Node*)malloc(sizeof(Node));
-    newnode->next = NULL;
+    newnode->next = Null;
     int position;
     cout<<"\nEnter the position :";
     cin>>position;

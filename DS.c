@@ -967,7 +967,7 @@ int main()
 
 }*/
 // in the another form .......
-/*#include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 struct node
 {
@@ -1080,4 +1080,3 @@ int main()
         }
     }
 }
-*/
