@@ -21,7 +21,6 @@ void display()
 
 }
 void createlist()
-
 {
     struct node* temp =(struct node*)malloc(sizeof(struct node*));
     printf("Enter the data :");
@@ -227,6 +226,16 @@ void Deleteduplicates()
 
     }
 }
+ void reverseRecursion(struct node* prevNode , struct node* nextNode )
+ {
+     if (nextNode != NULL)
+     {
+        reverseRecursion(nextNode , nextNode->next);
+        nextNode->next = prevNode;
+     }
+     else 
+     head = prevNode;
+ }
  int main()
 {
     
@@ -248,6 +257,7 @@ void Deleteduplicates()
         printf("\n10) search an element in the list");
         printf("\n11) reverse the list .");
         printf("\n12) delete duplicates in the list ");
+        printf("\n13) reverse the list recursively");
         printf("\nEnter the option : ");
         scanf("%d",&op);
         switch(op)
@@ -287,6 +297,9 @@ void Deleteduplicates()
             break;   
             case 12:
             Deleteduplicates();
+            break;
+            case 13: 
+            reverseRecursion(NULL, head);
             break;
             default :
             exit(0);
@@ -434,7 +447,6 @@ void deleteatpos()
             free(temp);
         }
     }
-
     
 }
 void deletebyvalue()
@@ -539,7 +551,7 @@ int main()
    }
 }*/
 //stack operations using arrays  in c........
-/*#include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 #define size 5
 
@@ -629,7 +641,7 @@ int main()
             break;
         }
     }
-}*/
+}
 //queue implementation  using arrays in c....
 /*#include<stdio.h>
 #include<stdlib.h>
@@ -641,7 +653,7 @@ int queue[size];
  void enqueue()
  {
     if (rear == size-1)
-    printf("queue is full\n");\
+    printf("queue is full\n");
     else
     {
         if(front == -1)
@@ -687,6 +699,11 @@ void display()
     else
     printf("\n FALSE\n");
  }
+ void peek()
+ {
+    printf("the peek element is : %d",queue[front]);
+ }
+
  int main()
  {
     int op;
@@ -720,6 +737,9 @@ void display()
             break;
             case 5:
             display();
+            break;
+            case 6: 
+            peek();
             break;
             default :
             printf("option is invalid!.\n");
@@ -967,7 +987,7 @@ int main()
 
 }*/
 // in the another form .......
-#include<stdio.h>
+/*#include<stdio.h>
 #include<stdlib.h>
 struct node
 {
@@ -1080,3 +1100,4 @@ int main()
         }
     }
 }
+*/
