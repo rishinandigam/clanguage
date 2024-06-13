@@ -551,7 +551,7 @@ int main()
    }
 }*/
 //stack operations using arrays  in c........
-#include<stdio.h>
+/*#include<stdio.h>
 #include<stdlib.h>
 #define size 5
 
@@ -641,7 +641,7 @@ int main()
             break;
         }
     }
-}
+}*/
 //queue implementation  using arrays in c....
 /*#include<stdio.h>
 #include<stdlib.h>
@@ -687,6 +687,7 @@ void isempty()
 }
 void display()
 {
+
     printf("the queue is :");
     for(int i=front; i<= rear ;i++)
     printf("  <--%d ",queue[i]);
@@ -749,7 +750,7 @@ void display()
     
  }*/
 // stack implementatin using linkedlists in c....
-/*#include<stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
 struct node
 {
@@ -862,7 +863,7 @@ int main()
 
 
     }
-}*/
+}
 //queue implementation using linkedlists in c.....
 /*#include<stdio.h>
 #include<stdlib.h>
